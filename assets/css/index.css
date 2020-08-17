@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: rgba(12, 240, 255, 0.1);
 }
@@ -21,13 +25,14 @@ section {
     height: 320px;
   }
 
-@media only screen and (max-width: 600px) {
-  section {
-    min-height: 220px;
+  @media only screen and (max-width: 600px) {
+    section {
+      min-height: 220px;
+    }
   }
-}
 
 
 
 }
+
 /*# sourceMappingURL=index.css.map */
