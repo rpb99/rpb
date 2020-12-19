@@ -5,72 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <!-- Flickity -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/aos.css" />
-    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/index.min.css" />
   </head>
 
   <body>
-    <section id="home">
-      <div id="wave">
-        <nav class="navbar navbar-expand-lg navbar-light mb-5">
-          <a class="navbar-brand" href="#"
-            ><img src="./assets/images/logo.png" alt=""
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+    <div id="wave">
+      <nav
+        class="navbar navbar-expand-lg mb-5 fixed-top"
+        style="background-color: rgba(0, 0, 0, 0.2)"
+      >
+        <a class="navbar-brand" href="#"
+          ><img src="./assets/images/logo.png" width="60" height="60"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <div
-            class="collapse navbar-collapse text-center"
-            id="navbarSupportedContent"
-          >
-            <ul class="navbar-nav ml-md-5">
-              <li class="nav-item active">
-                <a class="nav-link" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#works">Works</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+        <div
+          class="collapse navbar-collapse text-center"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav ml-md-5">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#works">Works</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <section id="home">
       <div data-aos="zoom-in">
-        <div class="container">
-          <div class="row justify-content-between">
-            <div class="col col-md-6 flex-column order-lg-2">
+        <div class="container text-white">
+          <div class="row text-center">
+            <div class="col-12 flex-column">
               <h6>Hello, I Am</h6>
-              <h1>Riki Febrianto</h1>
-              <h1>Web Developer</h1>
-              <span class="line"></span>
+              <h1 id="typed"></h1>
               <p class="mt-2">
-                i’m a web developer as a my hobby to solve problem, change the
-                world with coding
+                i’m a coder as a my hobby to solve problems, change the world
+                with coding
               </p>
-              <a href="./assets/cv.pdf" class="btn btn-primary">Download CV</a>
-            </div>
-            <div class="col-md-4 my-5 order-lg-1">
-              <img
-                class="img-fluid"
-                src="./assets/images/illustration.svg"
-                alt=""
-              />
+              <a
+                href="./assets/cv.pdf"
+                style="
+                  background-image: linear-gradient(to bottom, #222831, orange);
+                "
+                class="p-2 rounded-pill"
+                >Download CV</a
+              >
             </div>
           </div>
         </div>
@@ -85,129 +96,125 @@
             <span class="line"></span>
           </h1>
         </div>
-        <p class="mt-5">
-          I am web developer, Knowledge and experience 1+ year in HTML5, CSS3,
-          Bootstrap 4, SCSS,NodeJS. Skilled in design tools such as figma.
-        </p>
         <div data-aos="zoom-in">
           <h5 class="my-4">My Skills :</h5>
           <div class="row">
-            <div class="col">
-              <span>HTML</span>
-              <div class="progress mb-3">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 85%"
-                  aria-valuenow="85"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
+            <div class="col-3">
+              <div
+                style="
+                  background-image: linear-gradient(to right, #222831, #393e46);
+                "
+                class="rounded p-2 mb-2"
+              >
+                <span>HTML</span>
               </div>
-              <span>CSS</span>
-              <div class="progress mb-3">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 85%"
-                  aria-valuenow="85"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
+
+              <div
+                style="
+                  background-image: linear-gradient(to right, #222831, #393e46);
+                "
+                class="rounded p-2 mb-2"
+              >
+                <span>CSS</span>
               </div>
-              <span>Tailwind CSS</span>
-              <div class="progress mb-3">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 80%"
-                  aria-valuenow="80"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
+
+              <div
+                style="
+                  background-image: linear-gradient(to right, #222831, #393e46);
+                "
+                class="rounded p-2 mb-2"
+              >
+                <span>Tailwind CSS</span>
               </div>
-              <span>Javascript</span>
-              <div class="progress mb-3">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 65%"
-                  aria-valuenow="85"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
+            </div>
+            <div class="col-3">
+              <div
+                style="
+                  background-image: linear-gradient(to right, #222831, #393e46);
+                "
+                class="rounded p-2 mb-2"
+              >
+                <span>Javascript</span>
               </div>
-              <span>Linux</span>
-              <div class="progress mb-3">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 70%"
-                  aria-valuenow="85"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
+
+              <div
+                style="
+                  background-image: linear-gradient(to right, #222831, #393e46);
+                "
+                class="rounded p-2 mb-2"
+              >
+                <span>Linux</span>
               </div>
-              <span>Node JS</span>
-              <div class="progress mb-3">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 70%"
-                  aria-valuenow="85"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
+
+              <div
+                style="
+                  background-image: linear-gradient(to right, #222831, #393e46);
+                "
+                class="rounded p-2 mb-2"
+              >
+                <span>Node JS</span>
               </div>
-              <span>React JS</span>
-              <div class="progress mb-3">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 30%"
-                  aria-valuenow="30"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
+            </div>
+
+            <div class="col-3">
+              <div
+                style="
+                  background-image: linear-gradient(to right, #222831, #393e46);
+                "
+                class="rounded p-2 mb-2"
+              >
+                <span>React JS</span>
               </div>
-              <span>MongoDB</span>
-              <div class="progress mb-3">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 50%"
-                  aria-valuenow="50"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
+
+              <div
+                style="
+                  background-image: linear-gradient(to right, #222831, #393e46);
+                "
+                class="rounded p-2 mb-2"
+              >
+                <span>MongoDB</span>
               </div>
-              <span>MySQL</span>
-              <div class="progress mb-3">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 70%"
-                  aria-valuenow="70"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
+
+              <div
+                style="
+                  background-image: linear-gradient(to right, #222831, #393e46);
+                "
+                class="rounded p-2 mb-2"
+              >
+                <span>MySQL</span>
               </div>
-              <span>PostgreSQL</span>
-              <div class="progress mb-3">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 50%"
-                  aria-valuenow="85"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
+            </div>
+
+            <div class="col-3">
+              <div
+                style="
+                  background-image: linear-gradient(to right, #222831, #393e46);
+                "
+                class="rounded p-2 mb-2"
+              >
+                <span>PostgreSQL</span>
+              </div>
+              <div
+                style="
+                  background-image: linear-gradient(to right, #222831, #393e46);
+                "
+                class="rounded p-2 mb-2"
+              >
+                <span>Figma</span>
+              </div>
+              <div
+                style="
+                  background-image: linear-gradient(to right, #222831, #393e46);
+                "
+                class="rounded p-2 mb-2"
+              >
+                <span>Ant Design</span>
               </div>
             </div>
           </div>
         </div>
 
-        <h5 class="my-3">Personal Information :</h5>
+        <h5 class="mt-5">Personal Information :</h5>
         <div class="row">
           <div class="col-md my-3">
             <img src="./assets/images/Email.png" alt="" />
@@ -235,8 +242,69 @@
           <h1>My Works<span class="line"></span></h1>
         </div>
         <div data-aos="zoom-in">
-          <div class="row flex-wrap">
-            <div class="col-md-4 mt-5">
+          <!-- Flickity HTML init -->
+          <div
+            class="carousel"
+            data-flickity='{ "draggable": true, "groupCells": true, "adaptiveHeight": true }'
+          >
+            <div class="carousel-cell">
+              <div class="card p-3">
+                <img
+                  src="./assets/images/portfolio-img/ip-tracker.png"
+                  class="card-img-top"
+                  alt="..."
+                  height="200"
+                />
+                <div class="card-body mb-5">
+                  <h5 class="card-title">
+                    <a
+                      href="https://ip-address-tracker-react-hook.herokuapp.com/"
+                      target="_blank"
+                      >IP Address Tracker</a
+                    >
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card p-3">
+                <img
+                  src="./assets/images/portfolio-img/listjob.png"
+                  class="card-img-top"
+                  alt="..."
+                  height="200"
+                />
+                <div class="card-body mb-5">
+                  <h5 class="card-title">
+                    <a
+                      href="https://list-job-challenge.vercel.app/"
+                      target="_blank"
+                      >List Jobs</a
+                    >
+                  </h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-cell">
+              <div class="card p-3">
+                <img
+                  src="./assets/images/portfolio-img/flowalgo-clone.png"
+                  class="card-img-top"
+                  alt="..."
+                  height="200"
+                />
+                <div class="card-body mb-5">
+                  <h5 class="card-title">
+                    <a href="https://rpb99.gitlab.io/flow-algo-clone/"
+                      >FlowAlgo Clone - Landing Page</a
+                    >
+                  </h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-cell">
               <div class="card p-3">
                 <img
                   src="./assets/images/portfolio-img/yelpcamp.png"
@@ -250,11 +318,11 @@
                       >YelpCamp</a
                     >
                   </h5>
-                  <p class="card-text">posting tempat kemah di sekitar</p>
                 </div>
               </div>
             </div>
-            <div class="col-md-4 mt-5">
+
+            <div class="carousel-cell">
               <div class="card p-3">
                 <img
                   src="./assets/images/portfolio-img/books.png"
@@ -266,14 +334,11 @@
                   <h5 class="card-title">
                     <a href="https://github.com/rpb99/books-api">Books API</a>
                   </h5>
-                  <p class="card-text">
-                    menyediakan api buku, tersedia publisher, etc. menggunakan
-                    backend nodejs + postgresql. on development!
-                  </p>
                 </div>
               </div>
             </div>
-            <div class="col-md-4 mt-5">
+
+            <div class="carousel-cell">
               <div class="card p-3">
                 <img
                   src="./assets/images/portfolio-img/saw.jpg"
@@ -287,13 +352,11 @@
                       >Pemilihan Handphone</a
                     >
                   </h5>
-                  <p class="card-text">
-                    pemilihan Handphone dengan menggunakan metode SAW (laravel)
-                  </p>
                 </div>
               </div>
             </div>
-            <div class="col-md-4 mt-5">
+
+            <div class="carousel-cell">
               <div class="card p-3">
                 <img
                   src="./assets/images/portfolio-img/react_vidly.png"
@@ -305,13 +368,11 @@
                   <h5 class="card-title">
                     <a href="https://secret-shore-34778.herokuapp.com">Vidly</a>
                   </h5>
-                  <p class="card-text">
-                    vidly clone menggunakan reactjs + backend nodejs
-                  </p>
                 </div>
               </div>
             </div>
-            <div class="col-md-4 mt-5">
+
+            <div class="carousel-cell">
               <div class="card p-3">
                 <img
                   src="./assets/images/portfolio-img/learn.png"
@@ -325,9 +386,6 @@
                       >Education Learning Website</a
                     >
                   </h5>
-                  <p class="card-text">
-                    Landing Page education learning with tailwind css
-                  </p>
                 </div>
               </div>
             </div>
@@ -335,6 +393,7 @@
         </div>
       </div>
     </section>
+
     <footer class="mt-5">
       <div class="bg bg-dark text-center text-white py-3">
         <p class="m-auto">Made with &hearts;</p>
@@ -360,5 +419,19 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <!-- Flickity -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        var typed3 = new Typed("#typed", {
+          strings: ["Riki Febrianto", " ", "Fullstack Developer"],
+          typeSpeed: 60,
+          backSpeed: 60,
+          startDelay: 1200,
+          loop: true,
+        });
+      });
+    </script>
   </body>
 </html>
