@@ -1,0 +1,51 @@
+body {
+  background-color: #222831;
+  color: #eeeeee !important;
+}
+
+a {
+  color: #eeeeee !important;
+}
+
+section {
+  min-height: 600px;
+}
+
+.line {
+  display: block;
+  width: 185px;
+  height: 5px;
+  background-color: orange;
+}
+
+/* external css: flickity.css */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.carousel-cell {
+  width: 28%;
+  height: 300px;
+  margin-right: 10px;
+  background: #8c8;
+  border-radius: 5px;
+}
+
+.carousel-cell a {
+  color: #222831 !important;
+}
+
+@media only screen and (min-width: 600px) {
+  #home {
+    margin-top: 280px;
+  }
+  .carousel-cell {
+    width: 60%;
+  }
+}
+/*# sourceMappingURL=index.css.map */
